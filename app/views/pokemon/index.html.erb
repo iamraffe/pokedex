@@ -30,34 +30,56 @@
       </div><!-- .modal-header -->
 
       <div class="modal-body">
-        <dl class="dl-horizontal">
-          <dt>Height</dt>
-          <dd id="js-pokemon-height"></dd>
+        <div class="progress hide">
+          <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            Loading....
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <dl class="dl-horizontal hide">
+              <dt>Height</dt>
+              <dd id="js-pokemon-height"></dd>
 
-          <dt>Weight</dt>
-          <dd id="js-pokemon-weight"></dd>
+              <dt>Weight</dt>
+              <dd id="js-pokemon-weight"></dd>
 
-          <dt>Hit Points</dt>
-          <dd id="js-pokemon-hp"></dd>
+              <dt>Hit Points</dt>
+              <dd id="js-pokemon-hp"></dd>
 
-          <dt>Attack</dt>
-          <dd id="js-pokemon-attack"></dd>
+              <dt>Attack</dt>
+              <dd id="js-pokemon-attack"></dd>
 
-          <dt>Defense</dt>
-          <dd id="js-pokemon-defense"></dd>
+              <dt>Defense</dt>
+              <dd id="js-pokemon-defense"></dd>
 
-          <dt>Special Attack</dt>
-          <dd id="js-pokemon-sp-atk"></dd>
+              <dt>Special Attack</dt>
+              <dd id="js-pokemon-sp-atk"></dd>
 
-          <dt>Special Defense</dt>
-          <dd id="js-pokemon-sp-def"></dd>
+              <dt>Special Defense</dt>
+              <dd id="js-pokemon-sp-def"></dd>
 
-          <dt>Speed</dt>
-          <dd id="js-pokemon-speed"></dd>
-        </dl>
-        <dl id="js-pokemon-types" class="dl-horizontal">
-          <dt>Type</dt>
-        </dl>
+              <dt>Speed</dt>
+              <dd id="js-pokemon-speed"></dd>
+            </dl>
+            <dl id="js-pokemon-types" class="dl-horizontal hide">
+              <dt>Type</dt>
+            </dl>
+          </div>
+          <div class="col-sm-4 pokemon-pp-wrapper">
+            <img id="js-pokemon-image" src="" alt="" class="hide">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button  id='show-evolutions' class='btn btn-lg btn-danger btn-block hide' data-resource-uri=''>
+                Show evolutions
+            </button>
+          </div>
+        </div>
+
+
       </div><!-- .modal-body -->
 
     </div><!-- .modal-content -->
