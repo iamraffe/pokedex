@@ -14,7 +14,7 @@
 
 
 <!-- Pokemon modal view (hidden at first) -->
-<div class="modal fade">
+<div id="pokedex" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -24,18 +24,39 @@
         </button>
 
         <h3 class="modal-title">
-          <span>Feraligtr</span>
-          <small>#160</small>
+          <span id="js-pokemon-name"></span>
+          <small id="js-pokemon-number"></small>
         </h3>
       </div><!-- .modal-header -->
 
       <div class="modal-body">
         <dl class="dl-horizontal">
           <dt>Height</dt>
-          <dd>23</dd>
+          <dd id="js-pokemon-height"></dd>
 
           <dt>Weight</dt>
-          <dd>888</dd>
+          <dd id="js-pokemon-weight"></dd>
+
+          <dt>Hit Points</dt>
+          <dd id="js-pokemon-hp"></dd>
+
+          <dt>Attack</dt>
+          <dd id="js-pokemon-attack"></dd>
+
+          <dt>Defense</dt>
+          <dd id="js-pokemon-defense"></dd>
+
+          <dt>Special Attack</dt>
+          <dd id="js-pokemon-sp-atk"></dd>
+
+          <dt>Special Defense</dt>
+          <dd id="js-pokemon-sp-def"></dd>
+
+          <dt>Speed</dt>
+          <dd id="js-pokemon-speed"></dd>
+        </dl>
+        <dl id="js-pokemon-types" class="dl-horizontal">
+          <dt>Type</dt>
         </dl>
       </div><!-- .modal-body -->
 
